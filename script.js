@@ -38,7 +38,7 @@ function draw() {
 
     // images and videos(webcam)
     image(capture, 0, 0);
-    fill(255,0,255);
+    fill(255,0,0);
 
     if(singlePose){
         for(let i=0; i<singlePose.keypoints.length; i++){
@@ -50,8 +50,8 @@ function draw() {
             line(skeleton[j][0].position.x, skeleton[j][0].position.y, skeleton[j][1].position.x, skeleton[j][1].position.y)
         }
 
-        image(specs,singlePose.nose.x-35,singlePose.nose.y-50,80,80);
-        image(smoke,singlePose.nose.x-35,singlePose.nose.y+10,40,40);
+        //image(specs,singlePose.nose.x-35,singlePose.nose.y-50,80,80);
+        //image(smoke,singlePose.nose.x-35,singlePose.nose.y+10,40,40);
 
         
     }
@@ -59,4 +59,3 @@ function draw() {
     
 
 }
-
