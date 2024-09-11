@@ -13,24 +13,38 @@
         body {
             background: rgb(238, 174, 202);
             background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-            font-family: 'Georgia', serif; /* Consistent font across the page */
-            color: #333; /* Dark gray text for readability */
+            font-family: 'Georgia', serif;
+            color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
         }
 
         /* Heading style */
         h1 {
             font-size: 3em;
             color: #2c3e50;
-            margin-top: 50px;
+            margin-top: 20px;
+        }
+
+        /* Center the canvas */
+        #canvasContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
         }
     </style>
 </head>
 
 <body>
     <h1>PoseNet Demo</h1>
+    <div id="canvasContainer"></div>
 </body>
 
 </html>
